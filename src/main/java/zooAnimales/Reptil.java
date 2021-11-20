@@ -30,18 +30,18 @@ public class Reptil extends Animal{
 	public static int cantidadReptiles(){
 		return listado.size();
 	}
-	public static void crearIguana(String nombreIguana, int edadIguana, String generoIguana){
+	public static Reptil crearIguana(String nombreIguana, int edadIguana, String generoIguana){
 		iguanas = iguanas + 1;
 		String colorEscamas = "verde";
 		int largoCola = 3;
 		String habitat = "humedal";
-		Reptil instanciaIguana = new Reptil(nombreIguana, edadIguana,habitat,generoIguana,colorEscamas,largoCola);
+		return new Reptil(nombreIguana, edadIguana,habitat,generoIguana,colorEscamas,largoCola);
 	}
-	public static void crearSerpiente(String nombreSerpiente, int edadSerpiente, String generoSerpiente){
+	public static Reptil crearSerpiente(String nombreSerpiente, int edadSerpiente, String generoSerpiente){
 		serpientes = serpientes +1;
 		String colorEscamas = "blanco";
 		int largoCola = 1;
 		String habitat = "jungla";
-		Reptil instanciaSerpiente = new Reptil(nombreSerpiente,edadSerpiente,habitat,generoSerpiente,colorEscamas,largoCola);
+		return new Reptil(nombreSerpiente,edadSerpiente,habitat,generoSerpiente,colorEscamas,largoCola);
 	}
 }

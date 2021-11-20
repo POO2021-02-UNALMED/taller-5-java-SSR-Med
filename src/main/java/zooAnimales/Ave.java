@@ -25,16 +25,16 @@ public class Ave extends Animal{
 	public static int cantidadAves(){
 		return listado.size();
 	}
-	public static void crearHalcon(String nombreHalcon, int edadHalcon, String generoHalcon){
+	public static Ave crearHalcon(String nombreHalcon, int edadHalcon, String generoHalcon){
 		String colorPlumas = "cafe glorioso";
 		String habitat = "montanas";
 		halcones = halcones + 1;
-		Ave instanciaHalcon = new Ave(nombreHalcon, edadHalcon, habitat, generoHalcon, colorPlumas);
+		return new Ave(nombreHalcon, edadHalcon, habitat, generoHalcon, colorPlumas);
 	}
-	public static void crearAguila(String nombreAguila, int edadAguila, String generoAguila){
+	public static Ave crearAguila(String nombreAguila, int edadAguila, String generoAguila){
 		aguilas = aguilas + 1;
 		String colorPlumas = "blanco y amarillo";
 		String habitat = "montanas";
-		Ave instanciaAguila = new Ave(nombreAguila, edadAguila, habitat, generoAguila, colorPlumas);
+		return new Ave(nombreAguila, edadAguila, habitat, generoAguila, colorPlumas);
 	}
 }
