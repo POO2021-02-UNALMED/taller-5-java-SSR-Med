@@ -29,4 +29,7 @@ public class Zoologico{
 		}
 		return suma;
 	}
+	public ArrayList<Zona> getZona(){
+		return zonas;
+	}
 }
